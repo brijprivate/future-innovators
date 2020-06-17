@@ -9,7 +9,6 @@ export class NavbarComponent implements OnInit {
   @Output() naviagate: EventEmitter<any> = new EventEmitter<any>();
   @Input() currentSection: string;
   constructor() {
-    console.log(this.currentSection)
    }
 
   ngOnInit(): void {

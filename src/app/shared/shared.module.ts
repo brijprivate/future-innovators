@@ -18,6 +18,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     CommonModule
   ],
   // tslint:disable-next-line: max-line-length
-  exports: [FeaturesComponent, PricingComponent, BlogComponent, ContactComponent, AboutComponent, ServicesComponent, FooterComponent, SwitcherComponent, ScrollspyDirective]
+  exports: [FeaturesComponent, PricingComponent, BlogComponent, ContactComponent, AboutComponent, ServicesComponent, FooterComponent, SwitcherComponent, ScrollspyDirective,NavbarComponent]
 })
 export class SharedModule { }
