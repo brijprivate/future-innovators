@@ -1,0 +1,48 @@
+ <!-- STRAT NAVBAR -->
+ <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark" (window:scroll)="windowScroll()"
+   id="navbar">
+   <div class="container">
+     <!-- LOGO -->
+     <a class="navbar-brand logo text-uppercase" href="/">
+       <i class="mdi mdi-alien"></i>Hiric
+     </a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+       aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
+       <i class="mdi mdi-menu"></i>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarCollapse">
+       <ul class="navbar-nav navbar-center" id="mySidenav">
+         <li class="nav-item" [ngClass]="{'active':currentSection === 'home'}" (click)="navigate('home')">
+           <a href="javascript: void(0);" class="nav-link">Home</a>
+         </li>
+         <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}" (click)="navigate('features')">
+           <a href="javascript: void(0);" class="nav-link">Features</a>
+         </li>
+         <li class="nav-item" [ngClass]="{'active':currentSection === 'services'}" (click)="navigate('services')">
+           <a href="javascript: void(0);" class="nav-link">Services</a>
+         </li>
+         <li class="nav-item" [ngClass]="{'active':currentSection === 'about'}"  (click)="navigate('about')">
+           <a href="javascript: void(0);"  class="nav-link">About</a>
+         </li>
+         <li class="nav-item" [ngClass]="{'active':currentSection === 'pricing'}"  (click)="navigate('pricing')">
+           <a href="javascript: void(0);" class="nav-link">Pricing</a>
+         </li>
+         <li class="nav-item" [ngClass]="{'active':currentSection === 'blog'}"  (click)="navigate('blog')">
+           <a href="javascript: void(0);" >Blog</a>
+         </li>
+         <li class="nav-item" [ngClass]="{'active':currentSection === 'contact'}"  (click)="navigate('contact')">
+           <a href="javascript: void(0);"  class="nav-link">Contact</a>
+         </li>
+       </ul>
+       <div class="nav-button ml-auto">
+         <ul class="nav navbar-nav navbar-right">
+           <li>
+             <button type="button" class="btn btn-custom navbar-btn btn-rounded">Try it
+               Free</button>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </div>
+ </nav>
+ <!-- END NAVBAR -->
