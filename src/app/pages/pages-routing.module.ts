@@ -14,9 +14,13 @@ import { PasswordForgotComponent } from './password-forgot/password-forgot.compo
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   component: Index1Component
+  // },
   {
     path: '',
-    component: Index1Component
+    component: Index2Component
   },
   {
     path: 'index-1',
