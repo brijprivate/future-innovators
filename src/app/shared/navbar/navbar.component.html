@@ -4,7 +4,7 @@
    <div class="container">
      <!-- LOGO -->
      <a class="navbar-brand logo text-uppercase" href="/">
-       <i class="mdi mdi-alien"></i>Hiric
+        <img class="logo" src="../../../assets/images/custom/logo-white.png" alt="">
      </a>
      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleMenu()">
@@ -18,6 +18,9 @@
          <li class="nav-item" [ngClass]="{'active':currentSection === 'features'}" (click)="navigate('features')">
            <a href="javascript: void(0);" class="nav-link">Features</a>
          </li>
+         <li class="nav-item" [ngClass]="{'active':currentSection === 'blog'}"  (click)="navigate('blog')">
+          <a href="javascript: void(0);" class="nav-link" >Courses</a>
+        </li>
          <li class="nav-item" [ngClass]="{'active':currentSection === 'services'}" (click)="navigate('services')">
            <a href="javascript: void(0);" class="nav-link">Services</a>
          </li>
@@ -27,9 +30,7 @@
          <li class="nav-item" [ngClass]="{'active':currentSection === 'pricing'}"  (click)="navigate('pricing')">
            <a href="javascript: void(0);" class="nav-link">Pricing</a>
          </li>
-         <li class="nav-item" [ngClass]="{'active':currentSection === 'blog'}"  (click)="navigate('blog')">
-           <a href="javascript: void(0);" class="nav-link" >Blog</a>
-         </li>
+       
          <li class="nav-item" [ngClass]="{'active':currentSection === 'contact'}"  (click)="navigate('contact')">
            <a href="javascript: void(0);"  class="nav-link">Contact</a>
          </li>
