@@ -223,3 +223,6 @@ input[type=number] {
 mat-tab-header.mat-tab-header {
   margin: 4em auto !important;
 }
+.mat-tab-labels{
+  justify-content: center;
+}
