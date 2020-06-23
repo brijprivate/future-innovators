@@ -18,6 +18,7 @@ import { Index8Component } from './index8/index8.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { PasswordForgotComponent } from './password-forgot/password-forgot.component';
+import { AppcommonModule } from '../app.common';
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
@@ -27,6 +28,7 @@ import { PasswordForgotComponent } from './password-forgot/password-forgot.compo
     PagesRoutingModule,
     SharedModule,
     NgbModule,
+    AppcommonModule,
     NgxYoutubePlayerModule.forRoot(),
     ScrollToModule.forRoot(),
   ]

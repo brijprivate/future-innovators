@@ -220,3 +220,6 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+mat-tab-header.mat-tab-header {
+  margin: 4em auto !important;
+}
