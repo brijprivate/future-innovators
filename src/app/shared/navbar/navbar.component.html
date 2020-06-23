@@ -21,6 +21,12 @@
          <li class="nav-item" [ngClass]="{'active':currentSection === 'blog'}"  (click)="navigate('blog')">
           <a href="javascript: void(0);" class="nav-link" >Courses</a>
         </li>
+
+         <li class="nav-item" [ngClass]="{'active':currentSection === 'howitworks'}" (click)="navigate('howitworks')">
+          <a href="javascript: void(0);" class="nav-link">How it works</a>
+        </li>
+
+
          <li class="nav-item" [ngClass]="{'active':currentSection === 'services'}" (click)="navigate('services')">
            <a href="javascript: void(0);" class="nav-link">Services</a>
          </li>
@@ -46,3 +52,4 @@
    </div>
  </nav>
  <!-- END NAVBAR -->
+ 
