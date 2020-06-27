@@ -3,33 +3,85 @@
  
 <div appScrollspy [spiedTags]="['SECTION']" (sectionChange)="onSectionChange($event)">
 
+    <section style="position: relative" id="home" >
+      <div class="header">
+
+          <owl-carousel [options]="SlideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >  
+                  <div class="item">
+                      <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found">
+                      <div class="cover">
+                          <div class="container">
+                              <div class="header-content">
+                                  <div class="line"></div>
+                                  <h2>Teimagine Digital Experience with</h2>
+                                  <h1>Start-ups and solutions</h1>
+                                  <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                              </div>
+                          </div>
+                       </div>
+                  </div>                    
+                  <div class="item">
+                      <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found">
+                      <div class="cover">
+                          <div class="container">
+                              <div class="header-content">
+                                  <div class="line animated bounceInLeft"></div>
+                                  <h2>Reimagine Digital Experience with</h2>
+                                  <h1>Intelligent solutions</h1>
+                                  <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                              </div>
+                          </div>
+                       </div>
+                  </div>                
+                  <div class="item">
+                      <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found">
+                      <div class="cover">
+                          <div class="container">
+                              <div class="header-content">
+                                  <div class="line animated bounceInLeft"></div>
+                                  <h2>Peimagine Digital Experience with</h2>
+                                  <h1>Intelligent Solutions</h1>
+                                  <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                              </div>
+                          </div>
+                       </div>
+                  </div>
+              </owl-carousel> 
+            </div> 
+
+            <div class="wave-effect wave-anim">
+                <div class="waves-shape shape-one">
+                  <div class="wave wave-one" style="background-image: url('assets/images/wave-shape/wave1.png')"></div>
+                </div>
+                <div class="waves-shape shape-two">
+                  <div class="wave wave-two" style="background-image: url('assets/images/wave-shape/wave2.png')"></div>
+                </div>
+                <div class="waves-shape shape-three">
+                  <div class="wave wave-three" style="background-image: url('assets/images/wave-shape/wave3.png')"></div>
+                </div>
+              </div>
+      </section>
+
+
+
+
    <!--START HOME-->
-   <section class="section bg-home home-half" id="home" data-image-src="images/bg-home.jpg">
+   <!-- <section class="section bg-home home-half" id="home" data-image-src="images/bg-home.jpg">
      <div class="bg-overlay"></div>
      <div class="container">
        <div class="row">
          <div class="col-lg-8 offset-lg-2 text-white text-center">
            <img src="../../../assets/images/custom/logo_new.png" alt="" width="100%">
-           <!-- <h1 class="home-small-title" style="font-size: 36px">Future Innovators</h1> -->
-           <!-- <h1 class="home-title"><small>Coder of today, Champion of tommorow</small></h1> -->
+           <h1 class="home-small-title" style="font-size: 36px">Future Innovators</h1>
+           <h1 class="home-title"><small>Coder of today, Champion of tommorow</small></h1>
            <p class="padding-t-15 home-desc mx-auto">Want to be a programmer then join us for learning and improving your programming skills</p>
            <p class="play-shadow margin-l-r-auto mb-4"><a (click)="openWindowCustomClass(content)"
                class="play-btn video-play-icon"><i class="mdi mdi-play text-center"></i></a></p>
          </div>
        </div>
      </div>
-     <div class="wave-effect wave-anim">
-       <div class="waves-shape shape-one">
-         <div class="wave wave-one" style="background-image: url('assets/images/wave-shape/wave1.png')"></div>
-       </div>
-       <div class="waves-shape shape-two">
-         <div class="wave wave-two" style="background-image: url('assets/images/wave-shape/wave2.png')"></div>
-       </div>
-       <div class="waves-shape shape-three">
-         <div class="wave wave-three" style="background-image: url('assets/images/wave-shape/wave3.png')"></div>
-       </div>
-     </div>
-   </section>
+   
+   </section> -->
    <ng-template #content let-modal>
      <div class="modal-header">
        <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
@@ -42,6 +94,9 @@
      </div>
    </ng-template>
    <!--END HOME-->
+
+
+  
    <section class="section-sm bg-light">
      <div class="container customlogo" >
        <div class="row">
@@ -80,17 +135,19 @@
 
    <app-features></app-features>
    <app-blog></app-blog>
-   <section class="section bg-light text-center" id="howitworks">
+   <section class="section  text-center" id="howitworks">
 
     <h1 class="home-small-title" style="font-size: 36px">How It Works</h1>
 
   <div class=" " >
     <div class="">
       <mat-tab-group mat-align-tabs="start">
-        <mat-tab label="STEP I">Request For a free demo</mat-tab>
-        <mat-tab label="STEP II">Select the course and schedule</mat-tab>
-        <mat-tab label="STEP III">Join one hour live session with our trainer</mat-tab>
-        <mat-tab label="STEP IV ">Like the session and batch timing will be assigned</mat-tab>
+        <mat-tab label="STEP I">First step is hardest. But not for Future innovators. You just need to request for a free demo or just dial <a href="tel:8074825006">8074825006</a>  and relax.</mat-tab>
+        <mat-tab label="STEP II">Our expert will get back to you within 24 hours with details like timing and link for the demo session.</mat-tab>
+        <mat-tab label="STEP III">Once conform with timing, we will have a demo class for 1 hour, you just need a laptop with good internet connectivity.
+
+        </mat-tab>
+        <mat-tab label="STEP IV ">Liked the session !! You are almost there. We will then schedule classes depending on availability.</mat-tab>
       </mat-tab-group>
 
       
@@ -98,6 +155,53 @@
   </div>
   </div>
 </section>
+
+
+
+    <header>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line"></div>
+                            <h2>Teimagine Digital Experience with</h2>
+                            <h1>Start-ups and solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                        </div>
+                    </div>
+                 </div>
+            </div>                    
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Reimagine Digital Experience with</h2>
+                            <h1>Intelligent solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                        </div>
+                    </div>
+                 </div>
+            </div>                
+            <div class="item">
+                <img src="https://cdn.pixabay.com/photo/2016/03/09/09/22/workplace-1245776_960_720.jpg" alt="images not found">
+                <div class="cover">
+                    <div class="container">
+                        <div class="header-content">
+                            <div class="line animated bounceInLeft"></div>
+                            <h2>Peimagine Digital Experience with</h2>
+                            <h1>Intelligent Solutions</h1>
+                            <h4>We help entrepreneurs, start-ups and enterprises shape their ideas into products</h4>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </header>
+  
    <app-services></app-services>
  
  

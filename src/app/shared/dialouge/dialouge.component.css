@@ -1,0 +1,8 @@
+.cross{
+    float: right;
+    font-size: 30px;
+    position: absolute;
+    right: 8px;
+    bottom: 100%;
+    cursor: pointer;
+}

@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-
 @Component({
   selector: 'app-index2',
   templateUrl: './index2.component.html',
@@ -22,7 +21,10 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 `]
 })
 export class Index2Component implements OnInit {
-
+  title = 'owlcarouselinAngular';  
+  images = ['../assets/images/Carousel1.jpeg', '../assets/images/Carousel2.jpeg', '../assets/images/Carousel3.jpeg'];  
+  SlideOptions = { items: 1, dots: false, nav: true ,autoplay:true,loop:true};  
+  CarouselOptions = { items: 3, dots: false, nav: true ,autoplay:true,loop:true}; 
   public currentSection = 'home';
   navgatetion: string='home';
 
@@ -58,6 +60,7 @@ export class Index2Component implements OnInit {
   }
 
   ngOnInit() {
+  
   }
 
   openWindowCustomClass(content) {

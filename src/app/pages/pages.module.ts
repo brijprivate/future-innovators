@@ -22,7 +22,7 @@ import { AppcommonModule } from '../app.common';
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
-  declarations: [Index1Component, Index2Component, Index3Component, Index4Component, Index5Component, Index6Component, Index7Component, Index8Component, LoginComponent, SignupComponent, PasswordForgotComponent],
+  declarations: [Index1Component, Index2Component, Index3Component, Index4Component, Index5Component, Index6Component, Index7Component, Index8Component, LoginComponent, SignupComponent, PasswordForgotComponent, ],
   imports: [
     CommonModule,
     PagesRoutingModule,

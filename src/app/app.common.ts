@@ -31,6 +31,7 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { FormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
+import { OwlModule } from 'ngx-owl-carousel';  
 
 
 @NgModule({
@@ -39,7 +40,7 @@ import { ToastrModule } from 'ngx-toastr';
   ],
   imports: [
     MatDatepickerModule,
- 
+    OwlModule,
     MatInputModule,
     MatAutocompleteModule,
     MatDatepickerModule,
@@ -74,7 +75,7 @@ import { ToastrModule } from 'ngx-toastr';
   ],
   exports:[
     MatDatepickerModule,
- 
+    OwlModule,
     MatInputModule,
     MatAutocompleteModule,
     MatDatepickerModule,

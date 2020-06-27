@@ -488,7 +488,7 @@ iframe {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -10px;
     margin: auto;
     height: 150px;
     overflow: hidden;

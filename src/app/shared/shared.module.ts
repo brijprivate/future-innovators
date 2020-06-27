@@ -11,10 +11,11 @@ import { SwitcherComponent } from './switcher/switcher.component';
 import { ScrollspyDirective } from './scrollspy.directive';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AppcommonModule } from '../app.common';
+import { DialougeComponent } from './dialouge/dialouge.component';
 
 @NgModule({
   // tslint:disable-next-line: max-line-length
-  declarations: [FeaturesComponent, PricingComponent, BlogComponent, ContactComponent, AboutComponent, ServicesComponent, FooterComponent, SwitcherComponent, ScrollspyDirective, NavbarComponent],
+  declarations: [FeaturesComponent, PricingComponent, BlogComponent, ContactComponent, AboutComponent, ServicesComponent, FooterComponent, SwitcherComponent, ScrollspyDirective, NavbarComponent, DialougeComponent],
   imports: [
     CommonModule,
     AppcommonModule
