@@ -21,12 +21,15 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 `]
 })
 export class Index2Component implements OnInit {
-  title = 'owlcarouselinAngular';  
-  images = ['../assets/images/Carousel1.jpeg', '../assets/images/Carousel2.jpeg', '../assets/images/Carousel3.jpeg'];  
-  SlideOptions = { items: 1, dots: false, nav: true ,autoplay:true,loop:true};  
-  CarouselOptions = { items: 3, dots: false, nav: true ,autoplay:true,loop:true}; 
+  title = 'owlcarouselinAngular';
+  images = ['../assets/images/Carousel1.jpeg', '../assets/images/Carousel2.jpeg', '../assets/images/Carousel3.jpeg'];
+  SlideOptions = {
+    items: 1, dots: false, nav: true, autoplay: true, autoPlaySpeed: 5000, autoPlayTimeout: 5000,
+    loop: true
+  };
+ 
   public currentSection = 'home';
-  navgatetion: string='home';
+  navgatetion: string = 'home';
 
   constructor(private modalService: NgbModal) { }
 
@@ -60,19 +63,20 @@ export class Index2Component implements OnInit {
   }
 
   ngOnInit() {
-  
+    window.scrollBy(0, 1);
+
   }
 
   openWindowCustomClass(content) {
     this.modalService.open(content, { windowClass: 'dark-modal', size: 'lg' });
   }
 
-  navigatehere(ev){
+  navigatehere(ev) {
     console.log(ev);
-    this.navgatetion=ev;
-    let master= document.getElementById('master')
+    this.navgatetion = ev;
+    let master = document.getElementById('master')
     setTimeout(() => {
-     master.click()
+      master.click()
     }, 20);
   }
 }
