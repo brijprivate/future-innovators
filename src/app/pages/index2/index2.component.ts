@@ -24,7 +24,8 @@ export class Index2Component implements OnInit {
   title = 'owlcarouselinAngular';
   images = ['../assets/images/Carousel1.jpeg', '../assets/images/Carousel2.jpeg', '../assets/images/Carousel3.jpeg'];
   SlideOptions = {
-    items: 1, dots: false, nav: true, autoplay: true, autoPlaySpeed: 5000, autoPlayTimeout: 5000,
+    items: 1, dots: false, nav: true, autoplay: true,
+    autoPlaySpeed: 7000,
     loop: true
   };
  

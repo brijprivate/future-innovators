@@ -5,7 +5,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class GlobalService {
-  apiurl='http://localhost:3000/'
+  apiurl='https://futureserver-1f6d9.web.app/'
+  // apiurl='http://localhost:3000/'
 
   constructor(private http: HttpClient) { }
 
