@@ -1,103 +1,116 @@
-    <!-- CONTACT FORM START-->
-    <section class="section blueshade" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <h1 class="section-title text-center">Get In Touch</h1>
-            <div class="section-title-border margin-t-20"></div>
-            <p class="section-subtitle text-muted text-center font-secondary padding-t-30">Feel free to reach us for any
-              queries</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="mt-4 pt-4">
-              <p class="mt-4"><span class="h5">Office Address :</span><br> <span class="text-muted d-block mt-2">
-                  Flat no: 502, Vishista vaibhawam, Alind Colony, Hyderabad, 500084</span></p>
-              <p class="mt-4"><span class="h5">Contacts:</span><br> <span class="text-muted d-block mt-2"><a href="tel:8074825006">+91 8074825006</a>
-                  <br /><a href="mailto:info.futureinnovators@gmail.com">info.futureinnovators@gmail.com</a></span></p>
-              <p class="mt-4"><span class="h5">Working Hours:</span><br> <span class="text-muted d-block mt-2">10:00AM
-                  To
-                  07:00PM</span></p>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="custom-form mt-4 pt-4">
-              <div id="message"></div>
-              <form #contact="ngForm" (ngSubmit)="contact.valid && onFormSubmit(contact.value)">
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="form-group mt-2">
-                      <mat-form-field appearance="outline" class="wd100">
-                        <mat-label>Name</mat-label>
-
-                        <input matInput placeholder="Name" ngModel required #name="ngModel" name="name"
-                          [(ngModel)]='formmodel.name' >
-                        <mat-error *ngIf="name.errors && name.errors.required">
-                          This is a required field
-                        </mat-error>
-                      
-                      </mat-form-field>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="form-group mt-2">
-                      <mat-form-field appearance="outline" class="wd100">
-                        <mat-label>Email</mat-label>
-
-                        <input matInput placeholder="Email" ngModel required #email="ngModel" name="email"
-                          [(ngModel)]='formmodel.email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
-                        <mat-error *ngIf="email.errors && email.errors.required">
-                          This is a required field
-                        </mat-error>
-                        <mat-error *ngIf="email.errors && email.errors.pattern">
-                          Please enter valid email id
-                        </mat-error>
-                      </mat-form-field>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group mt-2">
-                      <mat-form-field appearance="outline" class="wd100">
-                        <mat-label>Mobile No:</mat-label>
-
-                        <input matInput placeholder="mobile" ngModel  #mobile="ngModel" name="mobile"
-                          [(ngModel)]='formmodel.mobile' pattern="[0-9]{10}" maxlength="10">
-                       
-                          <mat-error *ngIf="mobile.errors && mobile.errors.pattern">
-                            Please enter valid Mobile no
-                          </mat-error>
-
-                      </mat-form-field>
-                    </div>
-                  </div>
-                </div>
+<!-- CONTACT FORM START-->
+<section class="section blueshade" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h1 class="section-title text-center">Get In Touch</h1>
+        <div class="section-title-border margin-t-20"></div>
+        <p class="section-subtitle text-muted text-center font-secondary padding-t-30">Feel free to reach us for any
+          queries</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="mt-4 pt-4">
 
 
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="form-group mt-2">
-                      <mat-form-field appearance="outline" class="example-full-width wd100" >
-                        <mat-label>Leave a Message</mat-label>
-                        <textarea matInput placeholder="Your message..."  ngModel  #message="ngModel" name="message"  [(ngModel)]='formmodel.message'></textarea>
-                        
-                      </mat-form-field>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-12 text-right">
-                    <input type="submit" id="submit" name="send" class="submitBnt btn btn-custom" value="Send Message">
-                    <div id="simple-msg"></div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+          <p class="mt-4"><span class="h5">Visitors:</span><br> <span class="text-muted d-block mt-2">
+
+              <!-- Start of WebFreeCounter Code -->
+              <a href="https://www.webfreecounter.com/" target="_blank"><img
+                  src="https://www.webfreecounter.com/hit.php?id=gaccfo&nd=9&style=26" border="0"
+                  alt="visitor counter"></a>
+              <!-- End of WebFreeCounter Code -->
+            </span></p>
+
+          <p class="mt-4"><span class="h5">Office Address :</span><br> <span class="text-muted d-block mt-2">
+              Flat no: 502, Vishista vaibhawam, Alind Colony, Hyderabad, 500084</span></p>
+          <p class="mt-4"><span class="h5">Contacts:</span><br> <span class="text-muted d-block mt-2"><a
+                href="tel:9121482867">+91 9121482867</a>
+              <br /><a href="mailto:info.futureinnovators@gmail.com">info.futureinnovators@gmail.com</a></span></p>
+          <p class="mt-4"><span class="h5">Working Hours:</span><br> <span class="text-muted d-block mt-2">
+            
+              Monday - Saturday - 10:00 AM to 7:00 PM <br>Sunday - 11:00 AM to 3:00 PM</span></p>
         </div>
       </div>
-    </section>
-    <!-- CONTACT FORM END-->
+      <div class="col-lg-8">
+        <div class="custom-form mt-4 pt-4">
+          <div id="message"></div>
+          <form #contact="ngForm" (ngSubmit)="contact.valid && onFormSubmit(contact.value)">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group mt-2">
+                  <mat-form-field appearance="outline" class="wd100">
+                    <mat-label>Name</mat-label>
+
+                    <input matInput placeholder="Name" ngModel required #name="ngModel" name="name"
+                      [(ngModel)]='formmodel.name'>
+                    <mat-error *ngIf="name.errors && name.errors.required">
+                      This is a required field
+                    </mat-error>
+
+                  </mat-form-field>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group mt-2">
+                  <mat-form-field appearance="outline" class="wd100">
+                    <mat-label>Email</mat-label>
+
+                    <input matInput placeholder="Email" ngModel required #email="ngModel" name="email"
+                      [(ngModel)]='formmodel.email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                    <mat-error *ngIf="email.errors && email.errors.required">
+                      This is a required field
+                    </mat-error>
+                    <mat-error *ngIf="email.errors && email.errors.pattern">
+                      Please enter valid email id
+                    </mat-error>
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group mt-2">
+                  <mat-form-field appearance="outline" class="wd100">
+                    <mat-label>Mobile No:</mat-label>
+
+                    <input matInput placeholder="mobile" ngModel #mobile="ngModel" name="mobile"
+                      [(ngModel)]='formmodel.mobile' pattern="[0-9]{10}" maxlength="10">
+
+                    <mat-error *ngIf="mobile.errors && mobile.errors.pattern">
+                      Please enter valid Mobile no
+                    </mat-error>
+
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group mt-2">
+                  <mat-form-field appearance="outline" class="example-full-width wd100">
+                    <mat-label>Leave a Message</mat-label>
+                    <textarea matInput placeholder="Your message..." ngModel #message="ngModel" name="message"
+                      [(ngModel)]='formmodel.message'></textarea>
+
+                  </mat-form-field>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 text-right">
+                <input type="submit" id="submit" name="send" class="submitBnt btn btn-custom" value="Send Message">
+                <div id="simple-msg"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CONTACT FORM END-->
